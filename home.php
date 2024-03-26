@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrenchGamerHub</title>
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #020202;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00FFD5;
+            color: #000;
+        }
+
+        .home-icon {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        section#main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .game-card {
+            border: 1px solid #040435;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #00158080; /* Changed background color */
+            width: calc(33.33% - 40px);
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+            color: #000; /* Changed text color */
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .game-info {
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px; /* Added margin bottom */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #ddd;
+        }
+        .home-icon {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .logout-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #f00;
+    /* Change color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+}
+
+.logout-btn:hover {
+    background-color: #ff5555;
+    /* Change color on hover */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DrenchGamerHub</h1>
+    </header>
+    <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+    <nav>
+        <ul>
+            <!-- Home page icon -->
+            <li><a href="home.html"><i class="fas fa-home home-icon"></i>Home</a></li>
+            <li><a href="peripherals.html">Peripherals</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="main-content">
+        <p>Our website allows a user to be able to purchase and interact with cutting-edge peripherals, high-end consoles, and exclusive games that redefine the gaming experience.</p>
+        
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Gaming Universe. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
