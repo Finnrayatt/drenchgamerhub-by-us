@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer   src="main.js"></script>
+    <title>DrenchGamerHub</title>
+</head>
+
+    <body>
+        <nav class="main-menu">
+          <div>
+            <div class="user-info">
+              <img
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e5a707f4-d5ac-4f30-afd8-4961ae353dbc"
+                alt="user" />
+              <p>User profile</p>
+            </div>
+            <ul>
+              <li class="nav-item active">
+                <a href="#">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">Profile</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-map nav-icon"></i>
+                  <span class="nav-text">Discover</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-arrow-trend-up nav-icon"></i>
+                  <span class="nav-text">Trending</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-chart-simple nav-icon"></i>
+                  <span class="nav-text">Analytics</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-heart nav-icon"></i>
+                  <span class="nav-text">Favorites</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-pen-to-square nav-icon"></i>
+                  <span class="nav-text">Reviews</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-gear nav-icon"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-right-from-bracket nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <section class="content">
+          <div class="left-content">
+            <div class="search-and-check">
+              <form class="search-box">
+                <input type="text" placeholder="Search event..." />
+                <i class="bx bx-search"></i>
+              </form>
+              <div class="interaction-control-mobile interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="header">
+              <picture class="morning-img">
+                <img
+                  class="header-mobile"
+                  src="glow.png"                  alt="" />
+                <img
+                  class="header-tablet"
+                  src="glow.png"                  alt="" />
+                <img
+                  class="header-desktop"
+                  src="glow.png"                  alt="" />
+              </picture>
+    
+              <picture class="night-img hidden">
+                <img
+                  class="header-mobile"
+                  src="glow.png"                  alt="" />
+                <img
+                  class="header-tablet"
+                  src="glow.png"                  alt="" />
+                <img
+                  class="header-desktop"
+                  src="glow.png"
+                  alt="" />
+              </picture>
+            </div>
+    
+            <div class="upcoming-events">
+              <h1>DrenchGamerHub Available Games</h1>
+              <div class="event-container">
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://live.staticflickr.com/65535/51441652150_ed46219100_o.jpg"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>God of War Ragnarok</h2>
+                    <p>Ksh 2500</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.5X_D9-Nm99mfuKUw099KZAHaEo?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>FinnnGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Grand Theft Auto 6</h2>
+                    <p>Ksh 10,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #582bac">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.gFY7eeY_f_B9hAxt-v7PWgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>WilfrednGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Horizon Zero Dawn</h2>
+                    <p>Ksh 4,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.5WFRll6dnkNNGWKe0x4ZZwHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2> Dead Space</h2>
+                    <p>Ksh 2,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #582bac">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.qr4_zPDUKlaTbq_sNzLMkAHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>WilfrednGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Cyberpunk 2077</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #b31a4d">Game Information
+                    </p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.0NCmKC5gvaYs3wtrJmHFMQHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>FinnnGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Red Dead Redemption 2</h2>
+                    <p>Ksh 7,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #582bac">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/R.c0caf313782f0c55c34e00117606e879?rik=N1bHp%2fgiR7IErw&pid=ImgRaw&r=0"
+                      alt="" />
+                    <p>WilfrednGames</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>The Callisto Protocol</h2>
+                    <p>Ksh 1,500</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #4a920f">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>      <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+
+
+
+                  
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card event-card">
+                  <div class="event-header">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.U-tWeNPni_DalNJDQTM4zgHaEK?rs=1&pid=ImgDetMain"
+                      alt="" />
+                    <p>SeannGames</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="event-content">
+                    <h2>Marvel’s Spider-Man Remastered</h2>
+                    <p>Ksh 5,000</p>
+                  </div>
+                  <div class="event-footer">
+                    <p style="background-color: #e48e2c">Game Information</p>
+                    <div class="btn-group">
+                      <button>Buy Game</button>
+                      <div class="share">
+                        <button class="share-btn">
+                          <i class="fa-solid fa-shopping-basket"></i>
+                        </button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                     
+
+              </div>
+            </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="reviews">
+              <h1>Past Event Reviews</h1>
+              <div class="review-container">
+                <div class="card review-card">
+                  <h2>Metal Sculpture Workshop</h2>
+                  <div class="ratings">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                  </div>
+                  <p>
+                    The metal sculpture workshop was a bit tough because shaping the
+                    metal was harder than expected. It would have been better with
+                    simpler instructions on how to mold the material.
+                  </p>
+                </div>
+    
+                <div class="card review-card">
+                  <h2>Electro Groove Night</h2>
+                  <div class="ratings">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                  </div>
+                  <p>
+                    The Electro Groove Night was so much fun! The music was awesome,
+                    and everyone had a great time dancing – a fantastic night out
+                    for sure!
+                  </p>
+                </div>
+    
+                <div class="card review-card">
+                  <h2>Wimbledon Championships - 2023 (Final)</h2>
+                  <div class="ratings">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <p>
+                    Watching the Wimbledon final between Novak Djokovic and Carlos
+                    Alcaraz was so exciting! The intense match and incredible skills
+                    of the players made it a thrilling experience that I'll always
+                    remember.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="right-content">
+            <div class="interaction-control interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div class="analytics">
+              <h1>Analytics</h1>
+              <div class="analytics-container">
+                <div class="total-events">
+                  <div class="event-number card">
+                    <h2>Past Events</h2>
+                    <p>20</p>
+                    <i class="bx bx-check-circle"></i>
+                  </div>
+                  <div class="event-number card">
+                    <h2>Upcoming Events</h2>
+                    <p>3</p>
+                    <i class="bx bx-timer"></i>
+                  </div>
+                </div>
+    
+                <div class="chart" id="doughnut-chart">
+                  <h2>Distribution of Attended Events</h2>
+                  <canvas id="doughnut"></canvas>
+                  <ul></ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="contacts">
+              <h1>Contacts</h1>
+              <div class="contacts-container">
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e56800db-687d-4d0e-a470-51e37a4431c7"
+                      alt="" />
+                    <p>Matt favored <span>Jazz Fusion Night</span></p>
+                  </div>
+                  <small>1 hour ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/fac9f27b-c1ea-4bba-973f-88996322fa2d"
+                      alt="" />
+                    <p>
+                      Bella bought a ticket for
+                      <span>Acoustic Serenade Under the Stars</span>
+                    </p>
+                  </div>
+                  <small>4 hours ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1499d73c-ccc0-41a1-b530-1d629012aebd"
+                      alt="" />
+                    <p>
+                      Lucas bought a ticket for
+                      <span>Wimbledon Championships - 2024</span>
+                    </p>
+                  </div>
+                  <small>1 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/949768d4-0196-486c-b386-edb47ddd54c2"
+                      alt="" />
+                    <p>
+                      Sophia favored
+                      <span>Clay Sculpting Class</span>
+                    </p>
+                  </div>
+                  <small>1 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8a470b8b-b5cf-4189-b36e-f22551997ff4"
+                      alt="" />
+                    <p>
+                      Kate bought a ticket for
+                      <span>Latin Rhythms Fusion</span>
+                    </p>
+                  </div>
+                  <small>3 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/7740acc0-3f86-4c28-8a8c-5ae67c343edb"
+                      alt="" />
+                    <p>
+                      Ben favored
+                      <span>Harry Potter Film Concert Series</span>
+                    </p>
+                  </div>
+                  <small>6 day ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- Inside your HTML -->
+<form action="add_review.php" method="post">
+  <h2>Add Review</h2>
+  <input type="text" name="event_name" placeholder="Event Name" required>
+  <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+  <textarea name="review_text" placeholder="Your Review" required></textarea>
+  <button type="submit">Submit Review</button>
+</form>
+
+
+
+<div class="reviews">
+        <h1>Past Event Reviews</h1>
+        <div class="review-container">
+            <?php
+            // Connect to your database and fetch reviews
+            $conn = new mysqli('your_database_host', 'your_username', 'your_password', 'your_database_name');
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            $sql = "SELECT * FROM reviews";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<div class='card review-card'>";
+                    echo "<h2>" . $row['event_name'] . "</h2>";
+                    // Display rating stars based on $row['rating']
+                    echo "<div class='ratings'>";
+                    for ($i = 0; $i < $row['rating']; $i++) {
+                        echo "<i class='bx bxs-star'></i>";
+                    }
+                    echo "</div>";
+                    echo "<p>" . $row['review_text'] . "</p>";
+                    echo "</div>";
+                }
+            } else {
+                echo "No reviews yet.";
+            }
+            $conn->close();
+            ?>
+        </div>
+    </div>
+
+        
+      </body>
+</html>

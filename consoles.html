@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrenchGamerHub</title>
+    <style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
+    color: #0a0909;
+}
+
+header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00FFD5;
+    color: #000;
+}
+
+section#main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.console-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.game-card {
+    border: 1px solid #070606;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: calc(33.33% - 40px);
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.game-card:hover {
+    border-color: #00FFD5; /* Change color as needed */
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Keep existing margin */
+    margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:last-child {
+    margin-right: 0; /* Remove margin-right for the last button */
+}
+
+
+.buttons button:hover {
+    background-color: #ddd;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #f00;
+    /* Change color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+    /* Ensure it's on top of other elements */
+}
+
+.logout-btn:hover {
+    background-color: #ff5555;
+    /* Change color on hover */
+}
+.home-icon {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #fff;"> DrenchGamerHub</h1>
+    </header>
+    <button class="logout-btn" onclick="window.location.href='indexx.html'">Logout</button>
+    
+    <nav>
+        <ul>
+            <!-- Home page icon -->
+            <li><a href="home.html"><i class="fas fa-home home-icon"></i>Home</a></li><li><a href="peripherals.html">Peripherals</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="main-content">
+      
+    
+    <header>
+        <h1 style="color: whitesmoke;">Console Catalog</h1>
+    </header>
+    <br>
+    <div class="console-container">
+    <div class="game-card">
+        <img src="https://www.siliconera.com/wp-content/uploads/2020/09/PS5-disc-drive-supports-backwards-compatible-PS4-game-discs.jpg" alt="Game Image">
+        <div class="game-info">
+            <h2>PS 5 CONSOLE</h2>
+            
+         
+            <p>Price: Ksh 85,000</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='ps5.html'">Check console Info</button>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="buyGame()">Buy console</button>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="https://th.bing.com/th/id/R.cf20d372cfe96a5e4a57e96b44ddac67?rik=SUsK624GVSIkWw&pid=ImgRaw&r=0" alt="Game Image">
+        <div class="game-info">
+            <h2>XBOX ONE CONSOLE</h2>
+          
+           
+            <p>Price: Ksh 100,000</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='xbox1.html'">Check console Info</button>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="buyGame()">Buy console</button>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="https://th.bing.com/th/id/OIP.swtPl8A4fLZ3m_lDBhzGDgHaE7?w=886&h=590&rs=1&pid=ImgDetMain" alt="Game Image">
+        <div class="game-info">
+            <h2>XBOX 360 CONSOLE</h2>
+           
+           
+            <p>Price: Ksh 25,000</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='xbox360.html'">Check console Info</button>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="buyGame()">Buy console</button>
+        </div>
+    </div>
+
+<br>
+
+
+    <div class="game-card">
+        <img src="https://th.bing.com/th/id/OIP.OMdtt2Y8b__tgIhAj0oAbgHaHa?rs=1&pid=ImgDetMain" alt="Game Image">
+        <div class="game-info">
+            <h2>PS 4 CONSOLE</h2>
+          
+            
+            <p>Price: Ksh 32,000</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='ps4.html'">Check console Info</button>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="buyGame()">Buy console</button>
+        </div>
+    </div>
+
+
+
+    <div class="game-card">
+        <img src="https://th.bing.com/th/id/OIP.i3-mEfZFJ4Tt7A8gyOWiYgHaFq?rs=1&pid=ImgDetMain" alt="Game Image">
+        <div class="game-info">
+            <h2>PS 3 CONSOLE</h2>
+        
+  
+            <p>Price: Ksh 9,000</p>
+        </div>
+        <div class="buttons">
+            <button onclick="window.location.href='ps5.html'">Check console Info</button>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="buyGame()">Buy console</button>
+        </div>
+    </div>
+
+
+</section>
+</div>
+
+
+
+<script>
+    function checkConsoleInfo(name, price, location, rating) {
+        // Update the console information
+        document.getElementById("console-name").textContent = "Name: " + name;
+        document.getElementById("console-price").textContent = "Price: " + price;
+        document.getElementById("console-location").textContent = "Location: " + location;
+        document.getElementById("console-rating").textContent = "Rating: " + rating;
+
+        // Show the console information div
+        document.getElementById("console-info").style.display = "block";
+    }
+
+    function addToCart() {
+        // Add to cart functionality
+        alert("Added to cart!");
+    }
+
+    function buyGame() {
+        // Buy game functionality
+        alert("Buying console!");
+    }
+</script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Catalog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link your CSS file here -->
+    <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #020202;
+        color: #0a0909;
+    }
+
+    header {
+        background-color: #000;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav {
+        background-color: #000;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #00FFD5;
+        color: #000;
+    }
+
+    .home-icon {
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    section#main-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .game-card {
+        border: 1px solid #070606;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        width: calc(33.33% - 40px);
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    .game-card:hover {
+        border-color: #00FFD5;
+    }
+
+    .game-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .game-info {
+        margin-top: 10px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .buttons button:hover {
+        background-color: #ddd;
+    }
+
+    .logout-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 20px;
+        background-color: #f00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .logout-btn:hover {
+        background-color: #ff5555;
+    }
+
+    /* Add home icon */
+    nav ul li:first-child a::before {
+        content: "\f015"; /* Unicode for home icon */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 5px;
+        color: #fff; /* Icon color */
+    }
+
+    .game-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    </style>
+</head>
+
+<button class="logout-btn" onclick="window.location.href='indexx.html'">Logout</button>
+<header>
+    <h1 style="color: #f9f9f9;">DrenchGamerHub</h1>
+</header>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="peripherals.html">Peripherals</a></li>
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<h1>Game Catalog</h1>
+
+<div class="game-container">
+<div class="game-card">
+    <img src="https://th.bing.com/th/id/R.78e9cc2d055c2901e15894105682cab2?rik=%2faueVpFVdvplWg&riu=http%3a%2f%2fimg04.deviantart.net%2fdab3%2fi%2f2014%2f343%2f8%2f4%2fevery_legendary_pokemon_by_yoshitaka-d2hpnb7.png&ehk=MSYp%2fPG5LjYjZmi5ArhRVQDY1kJ5VB4fpzc%2fesEnUqw%3d&risl=&pid=ImgRaw&r=0" alt="Game Image">
+    <div class="game-info">
+        <h2>NINTENDO ANIME</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 9,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('Nintendo Anime', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('Nintendo Anime', 39.99)">Buy Game</button>
+    </div>
+</div>
+     
+<div class="game-card">
+    <img src="https://th.bing.com/th/id/R.f75f6ab7dac9ab9d14143bbd286ae7e7?rik=kZXwR%2bCEaOFk2w&pid=ImgRaw&r=0" alt="Game Image">
+    <div class="game-info">
+        <h2>NBA 2K</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 5,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('NBA 2K', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('NBA 2K', 39.99)">Buy Game</button>
+    </div>
+</div>
+
+<div class="game-card">
+    <img src="https://th.bing.com/th/id/OIP.TXmMw6i6r7H1TnctV6bRvQHaEL?w=1084&h=611&rs=1&pid=ImgDetMain" alt="Game Image">
+    <div class="game-info">
+        <h2>CREW 2</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 7,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('CREW 2', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('CREW 2', 39.99)">Buy Game</button>
+    </div>
+</div>
+    
+<div class="game-card">
+    <img src="https://th.bing.com/th/id/R.20bd9f7c95277efeb3b5828ca932d472?rik=FOrI9gTsK%2fZskQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2LbXoj-FSfY%2fURkGw18bIBI%2fAAAAAAAACzk%2fxX6oL4X4cfI%2fs1600%2fgod-of-war-3argames786.jpg&ehk=DFOXf%2bwDh8Ayo9ELHiyj0fEjZj4225EpB71ThWOp5zA%3d&risl=&pid=ImgRaw&r=0" alt="Game Image">
+    <div class="game-info">
+        <h2>GOD OF WAR</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 6,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('GOD OF WAR', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('GOD OF WAR', 39.99)">Buy Game</button>
+    </div>
+</div>
+    
+<div class="game-card">
+    <img src="https://th.bing.com/th/id/OIP.Ka2uP4xb5eRLD2Rpn7LUPQHaEK?rs=1&pid=ImgDetMain" alt="Game Image">
+    <div class="game-info">
+        <h2>GTA V</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 5,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('GTA V', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('GTA V', 39.99)">Buy Game</button>
+    </div>
+</div>
+    
+<div class="game-card">
+    <img src="https://thegamefanatics.com/wp-content/uploads/2015/11/Call_of_Duty_BO3.jpg" alt="Game Image">
+    <div class="game-info">
+        <h2>CALL OF DUTY</h2>
+        <p>Genre: Adventure</p>
+        <p>Platform: Nintendo Switch</p>
+        <p>Price: Ksh 4,000</p>
+    </div>
+    <div class="buttons">
+        <button onclick="window.location.href='ps5.html'">Check game Info</button>
+        <button onclick="addToCart('CALL OF DUTY', 39.99)">Add to Cart</button>
+        <button onclick="buyGame('CALL OF DUTY', 39.99)">Buy Game</button>
+    </div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

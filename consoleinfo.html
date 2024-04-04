@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Information</title>
+</head>
+<body>
+    <h2>Console Information</h2>
+    <!-- Parse query parameters to display console information -->
+    <p>Name: <span id="console-name"></span></p>
+    <p>Price: <span id="console-price"></span></p>
+    <p>Location: <span id="console-location"></span></p>
+    <p>Rating: <span id="console-rating"></span></p>
+
+    <script>
+        // Parse query parameters to get console information
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const price = params.get('price');
+        const location = params.get('location');
+        const rating = params.get('rating');
+
+        // Display console information
+        document.getElementById("console-name").textContent = name;
+        document.getElementById("console-price").textContent = price;
+        document.getElementById("console-location").textContent = location;
+        document.getElementById("console-rating").textContent = rating;
+    </script>
+</body>
+</html>
